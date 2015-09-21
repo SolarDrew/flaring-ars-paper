@@ -1,5 +1,5 @@
 \documentclass{article}
-\usepackage[authoryear]{natbib}
+\usepackage[authoryear, round]{natbib}
 \usepackage{longtable}
 \usepackage{amstext}
 \usepackage{amssymb}
@@ -35,84 +35,7 @@ Many studies have been devoted to the topic of flare prediction (e.g.,
 looked at the temperature of the active regions associated with flares
 before the flare occurs.
 
-\subsection{Evolution of active regions}
-Active regions are formed when flux emerges from within the Sun, rising
-through the photosphere and out into the corona \citep{Moreno-Insertis1997}.
-At the photospheric level, this magnetic flux typically causes sunspots,
-which occur in pairs - one sunspot develops at each point where the
-magnetic flux passes through the photosphere. Sunspot pairs therefore
-have opposite magnetic polarity to each other. Above the photosphere,
-the magnetic field spreads out as the plasma pressure decreases and
-magnetic pressure begins to dominate. This results in large, dense
-coronal loops which are very bright in EUV and X-ray images and which
-follow the magnetic field structure. Flux can continue to emerge from
-the solar interior for up to a week or so, during which time the active
-region continues to grow in size. The length of time for which flux
-emerges, and hence the size of active regions, varies significantly,
-but tend to decrease with distance from the equator and increase with
-progression through the solar cycle (see \ref{chap:Introduction}).
-Once an active region has emerged, its flux is steadily dissipated
-by a variety of influences. In the photosphere, for instance, convective
-flows break up and spread out the flux. In the corona, active region
-loops reconnect with the surrounding background magnetic field, spreading
-the active region out more thinly. These and other effects cause parts
-of the active region to gradually break off and drift away until the
-region has entirely dissipated. Small active regions dissipate most
-quickly, lasting as little as a few days. The largest active regions,
-on the other hand, can persist for a few months and be visible on
-the Sun for several rotations. Active regions also often include an
-active region filament, which forms along the polarity inversion line.
-These filaments often persist after the active region itself has dissipated.
-
-\subsection{Physical characteristics of coronal loops}
-As described above, active regions continue growing as magnetic flux
-continues to emerge from below the photosphere. As such, active region
-loops have no typical length, and can vary from a few Mm to over 100
-Mm, depending on the size and complexity of their associated active
-region. Loop widths are typically a few pixels at most, and it is
-believed the resolution of current-generation instruments such as
-AIA is still insufficient to resolve the widths of many loops. This
-is supported by the presence of ``fuzzy'' loops in many active region
-observations, which are thought to consist of many sub-resolution
-loops forming a larger flux tube \citep{Klimchuk2006}.
-
-The magnetic field within active regions is much stronger than their
-surroundings, and the low plasma-$\beta$ in the corona makes active
-region loops excellent tracers of the coronal magnetic field. Active
-regions are therefore commonly used to provide constraints to the
-coronal magnetic field, which has to be extrapolated from photospheric
-magnetograms since it cannot be observed directly \citep{Wiegelmann2012}.
-Coronal loops are usually roughly semi-circular, with some inclination
-from the solar radial direction. Loops always cross the polarity inversion
-line of the active region, with each footpoint rooted in areas of
-opposite polarity. Due to the rapid decrease in pressure with height
-in the corona, loops tend to be closely confined at low altitudes
-and fan out significantly higher up.
-
-Active region loops are so much brighter in EUV and X-rays than their
-surroundings partly due to their much greater temperature (which will
-be covered in more detail below), but also due to their increased
-density. It is thought that when chromospheric material is heated
-it rises into coronal loops, where it becomes trapped by the magnetic
-field. It is also suggested by some studies  that many more coronal
-loops exist than are visible, but we only see those with sufficient
-density to emit brightly against the background quiet sun. Typical
-densities of active region loops are of the order of $10^{9}\textrm{cm}^{-3}$,
-but can vary significantly from one loop to another.
-
-
 \subsection{Active region dynamics}
-Although active regions can have quiescent periods in which they change
-very little (e.g. \citet{DelZanna2003}), they are typically very
-dynamic. As emerging flux continues to move outward from the Sun,
-the upper portions of some active regions expand directly into the
-extended corona \citep{Morgan2013}. Emerging flux also tends to increase
-the complexity of the magnetic field within active regions, increasing
-the likelihood of large reconnection events which could trigger CMEs
-or solar flares. This complexity often gives rise to a sigmoidal (S-shaped
-or inverse S-shaped) configuration of an active region's magnetic
-field, which is a common precursor to flares and CMEs (e.g.: \citet{Gibson2002,Wang2000}).
-
 Solar flares are large releases of magnetic free non-potential energy
 due to magnetic reconnection. This release of energy results in rapid
 localised heating of plasma to several million Kelvins. Due to their
@@ -134,146 +57,62 @@ events have been observed called microflares and nanoflares. These
 smaller events also release magnetic energy, which is thought to contribute
 to coronal heating .
 
-CMEs, like flares, are typically associated with active regions and
-are caused by magnetic reconnection, which releases active region
-filaments (or quiescent filaments) and accelerates them into the outer
-corona. These events are usually accompanied by flares, called eruptive
-flares. Again, more energetic CMEs are commonly associated with large,
-complex active regions. Several models of CME release require a significantly
-sheared magnetic field, which is indeed observed in many eruptive
-active regions (e.g.: \citet{Chen2015,Thompson2011,Kliem2012}). This
-shear can be used to predict which active regions are likely to produce
-CMEs \citep{Falconer2002}.
-
-In addition to these dramatic events, more subtle dynamics are seen
-in active regions. Many active region loops display various wave motions
-along their length, and passing EIT waves or similar disturbances
-can cause oscillations in active region loops.
-
-
 \subsection{Temperature structure of active regions}
+The temperature structure of active regions has been a topic of much debate for many years, and remains so primarily due to the intrinsic difficulties of measuring the temperature of plasma under such conditions.
+However, it has been clear for a long time that active regions are the hottest large-scale features in the corona, with a sharp transition to much higher temperatures than their surroundings.
+This was apparent from the first X-Ray observations of the Sun which showed strong emission from active regions.
+DEM analyses of whole active regions have usually found temperatures around 1-2MK \citep{Brosius1996,Kashyap1998,Schmelz2009,Reale2009,Warren2009a,Goryaev2010}, though many have also reported finding a hotter plasma component at \textasciitilde{}5-10MK \citep{Brosius1996,Kashyap1998,Schmelz2009,Reale2009}.
+These temperatures are typically interpreted as a diffuse background similar to the quiet sun, and hotter plasma within active region loops.
+However, it has been suggested that some of the hotter temperatures found are due to reduced instrument sensitivity at lower temperatures (e.g.: \citet{Boerner2013}) or insufficient thermal coverage of emission lines at low temperatures.
 
-The temperature structure of active regions has been a topic of much
-debate for many years, and remains so primarily due to the intrinsic
-difficulties of measuring the temperature of plasma under such conditions.
-However, it has been clear for a long time that active regions are
-the hottest large-scale features in the corona, with a sharp transition
-to much higher temperatures than their surroundings. This was apparent
-from the first X-Ray observations of the Sun which showed strong emission
-from active regions. DEM analyses of whole active regions have usually
-found temperatures around 1-2MK \citep{Brosius1996,Kashyap1998,Schmelz2009,Reale2009,Warren2009a,Goryaev2010},
-though many have also reported finding a hotter plasma component at
-\textasciitilde{}5-10MK \citep{Brosius1996,Kashyap1998,Schmelz2009,Reale2009}.
-These temperatures are typically interpreted as a diffuse background
-similar to the quiet sun, and hotter plasma within active region loops.
-However, it has been suggested that some of the hotter temperatures
-found are due to reduced instrument sensitivity at lower temperatures
-(e.g.: \citet{Boerner2013}) or insufficient thermal coverage of emission
-lines at low temperatures.
+As greater resolution was provided by new instruments, it became clear that active regions are composed of many individual large coronal loops.
+Due to the low plasma-$\beta$ parameter of the corona, conduction across field lines is strongly restricted, and each coronal loop can therefore be viewed as an isolated system.
+For this reason active region loops have often been treated as isothermal along their length, on the assumption that each loop has settled into thermal equilibrium.
+Indeed, several studies have found active region loops to be isothermal or nearly isothermal (see, e.g.: \citet{Lenz1999,DelZanna2011,DelZanna2013}).
+Many which do not report isothermal loops have found them to be cooler towards the footpoints (sometimes as cool as 0.5MK, e.g.: \citet{DelZanna2011}) and hottest at the apex of the loop \citep{Cheng1980,Aschwanden2000,DelZanna2003}.
+Active region loops are often broadly categorised by their temperature into ``cool'' loops ($T\lesssim1MK$), ``warm'' loops ($T\approx1MK$) and ``hot'' loops ($T\gtrsim1MK$).
+Any or all of these can be found within a single active region.
 
-As greater resolution was provided by new instruments, it became clear
-that active regions are composed of many individual large coronal
-loops. Due to the low plasma-$\beta$ parameter of the corona, conduction
-across field lines is strongly restricted, and each coronal loop can
-therefore be viewed as an isolated system. For this reason active
-region loops have often been treated as isothermal along their length,
-on the assumption that each loop has settled into thermal equilibrium.
-Indeed, several studies have found active region loops to be isothermal
-or nearly isothermal (see, e.g.: \citet{Lenz1999,DelZanna2011,DelZanna2013}).
-Many which do not report isothermal loops have found them to be cooler
-towards the footpoints (sometimes as cool as 0.5MK, e.g.: \citet{DelZanna2011})
-and hottest at the apex of the loop \citep{Cheng1980,Aschwanden2000,DelZanna2003}.
-Active region loops are often broadly categorised by their temperature
-into ``cool'' loops ($T\lesssim1MK$), ``warm'' loops ($T\approx1MK$)
-and ``hot'' loops ($T\gtrsim1MK$). Any or all of these can be found
-within a single active region. 
-
-The current understanding is that many visible loops are not yet fully
-resolved and consist of many isothermal or nearly isothermal strands
-below the resolution limit of the current instrumentation. These loops
-appear ``fuzzy'' in many images. Indeed, the work of \citet{DelZanna2013}
-showed that such loops are still not resolved even at the higher resolution
-of the Hi-C instrument. If these loops are multi-stranded, the strands
-must therefore be sufficiently fine that they are below even the resolution
-of Hi-C \citep{Cirtain2013}. This being the case, temperature values
-currently accepted for these loops are likely to be incorrect and
-will need to be re-calculated when better instrumentation is available
-to resolve the currently sub-resolution loops in enough wavelengths. 
-
+The current understanding is that many visible loops are not yet fully resolved and consist of many isothermal or nearly isothermal strands below the resolution limit of the current instrumentation.
+These loops appear ``fuzzy'' in many images.
+Indeed, the work of \citet{DelZanna2013} showed that such loops are still not resolved even at the higher resolution of the Hi-C instrument.
+If these loops are multi-stranded, the strands must therefore be sufficiently fine that they are below even the resolution of Hi-C \citep{Cirtain2013}.
+This being the case, temperature values currently accepted for these loops are likely to be incorrect and will need to be re-calculated when better instrumentation is available to resolve the currently sub-resolution loops in enough wavelengths.
 
 \subsection{Temperatures of flares}
-Solar flares are caused by magnetic reconnection, which can release
-large amounts of magnetic energy in a short space of time. This causes
-plasma particles to be accelerated and very rapidly heat the plasma
-in the transition region and chromosphere, which then expands upwards
-into coronal loops \citep{Simoes2015} in a process called chromospheric
-evaporation. Loops heated in this way have peak temperatures between
-8 and 40 MK \citep{Ryan2013,Ryan2014}, and emit strongly in EUV and
-X-rays. After this injection of heated material, these loops cool
-by conduction to the lower atmosphere until they reach temperatures
-of around 12MK \citep{Aschwanden2005}. This is then followed by a
-long radiative cooling phase.
+Solar flares are caused by magnetic reconnection, which can release large amounts of magnetic energy in a short space of time.
+This causes plasma particles to be accelerated and very rapidly heat the plasma in the transition region and chromosphere, which then expands upwards into coronal loops \citep{Simoes2015} in a process called chromospheric evaporation.
+Loops heated in this way have peak temperatures between 8 and 40 MK \citep{Ryan2013,Ryan2014}, and emit strongly in EUV and X-rays.
+After this injection of heated material, these loops cool by conduction to the lower atmosphere until they reach temperatures of around 12MK \citep{Aschwanden2005}.
+This is then followed by a long radiative cooling phase.
 
-The temperatures of flares themselves vary between $\approx5MK$ and
-$\approx18MK$ with an average of 12MK for large (M and X class) flares.
-Nanoflares are expected to produce heating to around 10MK \citep{Reale2011a},
-but are difficult to observe because loops heated by nanoflares tend
-to have lower density and therefore much fainter emission than those
-heated by large flares. Flare temperatures tend to be somewhat overestimated,
-as they are typically calculated using instruments such as Hinode's
-X-Ray Telescope (XRT) and the
-Reuven Ramaty High Energy Solar Spectroscopic Imager (RHESSI),
-which are much less sensitive than AIA to plasma at lower temperatures
-. Line- or filter-ratio methods have often been used for temperature
-analysis , which have been shown to be biased by the temperature
-response of the instrument, which again leads to higher temperature
-results when using instruments intended primarily to investigate hot
-plasma. More recent studies which compare such results against temperatures
-calculated using AIA data (e.g.: \citet{Ryan2013,Ryan2014}) give
-a slightly better idea of realistic flare temperatures.
+The temperatures of flares themselves vary between $\approx5MK$ and $\approx18MK$ with an average of 12MK for large (M and X class) flares.
+Nanoflares are expected to produce heating to around 10MK \citep{Reale2011a}, but are difficult to observe because loops heated by nanoflares tend to have lower density and therefore much fainter emission than those heated by large flares.
+Flare temperatures tend to be somewhat overestimated, as they are typically calculated using instruments such as Hinode's X-Ray Telescope (XRT) and the Reuven Ramaty High Energy Solar Spectroscopic Imager (RHESSI), which are much less sensitive than AIA to plasma at lower temperatures.
+Line- or filter-ratio methods have often been used for temperature analysis, which have been shown to be biased by the temperature response of the instrument, which again leads to higher temperature results when using instruments intended primarily to investigate hot plasma.
+More recent studies which compare such results against temperatures calculated using AIA data (e.g.: \citet{Ryan2013,Ryan2014}) give a slightly better idea of realistic flare temperatures.
 
-Though there have been many studies of temperature during flares,
-none have looked in detail at the temperatures, and changes in temperature,
-of active regions before the flare occurs. This work aims to address
-this issue by searching for flare precursors in the temperature distributions
-of flaring active regions.
+Though there have been many studies of temperature during flares, none have looked in detail at the temperatures, and changes in temperature, of active regions before the flare occurs.
+This work aims to address this issue by searching for flare precursors in the temperature distributions of flaring active regions.
 
 
 \section{Method}
 
-The single-parameter temperature map method described in \ref{chap:main-method}
-was used to investigate the changes in the temperatures over time
-of two sets of flaring active regions and one non-flaring active region.
-Set 1 was composed of active regions associated with flares which
-occurred during February and March 2011, which had a variety of peak
-fluxes. The flares detected included many small flares (B and C class)
-as well as several larger M class flares and two X class flares. This
-set was used to investigate the possibility of a link between active
-region temperature and flare peak flux. Set 2 spanned a much longer
-period of time, between 2010-07-14 and 2011-09-19, and included only
-active regions associated with X class flares. The temperatures of
-this set were compared against those of the non-flaring active region
-in order to determine whether large flares produce any visible signature
-before the flare onset. The non-flaring region is therefore used to
-determine the ``normal'' background variation in active region temperature
-in the absence of flares.
-
+The single-parameter temperature map method described in \cite{Leonard2014} was used to investigate the changes in the temperatures over time of two sets of flaring active regions and one non-flaring active region.
+Set 1 was composed of active regions associated with flares which occurred during February and March 2011, which had a variety of peak fluxes.
+The flares detected included many small flares (B and C class) as well as several larger M class flares and two X class flares.
+This set was used to investigate the possibility of a link between active region temperature and flare peak flux.
+Set 2 spanned a much longer period of time, between 2010-07-14 and 2011-09-19, and included only active regions associated with X class flares.
+The temperatures of this set were compared against those of the non-flaring active region in order to determine whether large flares produce any visible thermal signature before the flare onset.
+The non-flaring region is used to determine the ``normal'' background variation in active region temperature in the absence of flares.
 
 \subsection{Varying-class flares}
-For each flare event investigated in Set 1, a temperature map was
-calculated for a 150 x 150 arcsec area centred on the corresponding
-active region at four different times: 30 minutes before the flare,
-10 minutes before the flare, 1 minute before the flare, and at the
-flare onset time. For each time interval the peak fluxes of the flares
-were plotted against the mean temperatures of the associated active
-regions. The start times of the flares and the locations of the active
-regions on the solar disk were obtained by querying the Heliophysics
-Events Knowledgebase (HEK), a database of solar features and events.
-These queries were performed using SunPy's wrappers around the HEK,
-allowing the process to be automated. An example active region temperature
-map is shown in \ref{fig:ar-demo}. The specific flares investigated
-are listed in \ref{chap:Details-of-flares} along with the active
-region associated with each.
+For each flare event investigated in Set 1, a temperature map was calculated for a 150 x 150 arcsec area centred on the corresponding active region at four different times: 30 minutes before the flare, 10 minutes before the flare, 1 minute before the flare, and at the flare onset time.
+For each time interval the peak fluxes of the flares were plotted against the mean temperatures of the associated active regions.
+The start times of the flares and the locations of the active regions on the solar disk were obtained by querying the Heliophysics Events Knowledgebase (HEK), a database of solar features and events.
+These queries were performed using SunPy's wrappers around the HEK, allowing the process to be automated.
+An example active region temperature map is shown in Fig \ref{fig:ar-demo}.
+The specific flares investigated are listed in Appendix A along with the active region associated with each. % Put the appendix in and cite this properly
 
 \begin{figure}
 \begin{centering}
@@ -284,345 +123,204 @@ region associated with each.
 \includegraphics[width=0.6\textwidth]{figs/2011-03-09T2240}
 \par\end{centering}
 
-\caption{Example of an active region temperature map used for this investigation,
-and its location on the solar disk. Left: full-disk AIA 17.1nm image.
-The blue box indicates the boundaries of the region shown in the temperature
-map on the right. Right: close-up temperature map of the active region
-studied. The box indicates the portion of the map within which the
-mean temperature was calculated. The location of each active region
-investigated was determined automatically by querying the HEK through
-SunPy.\label{fig:ar-demo}}
+\caption{Example of an active region temperature map used for this investigation, and its location on the solar disk.
+Left: full-disk AIA 17.1nm image.
+The blue box indicates the boundaries of the region shown in the temperature map on the right.
+Right: close-up temperature map of the active region studied.
+The box indicates the portion of the map within which the mean temperature was calculated.
+The location of each active region investigated was determined automatically by querying the HEK through SunPy.\label{fig:ar-demo}}
 \end{figure}
 
-
 \subsection{X class flares}
-As for the first set of flares, 150 x 150 arcsec temperature maps
-were calculated of the active regions associated with the set 2 flares.
-In this case the active regions were mapped for 30 minutes preceding
-the start of the flare at 2-minute intervals. The maximum, 95th percentile,
-90th percentile, mean, standard deviation, 10th percentile, 5th percentile
-and minimum temperatures were then calculated for each temperature
-map for each flare in order to compare if and how the bulk temperature
-of the active regions changed before the flare. The 95th, 90th, 10th
-and 5th percentiles were calculated because the overall maximum and
-minimum may be affected by small numbers of unusually high or low
-temperature pixels, which may not accurately represent how the bulk
-temperature of the active region changes with time. Each of these
-parameters was plotted against time for each active region. Additionally,
-for each active region the change in the maximum temperature over
-time, $\frac{\Delta T_{max}}{\Delta t}$, was calculated for each
-time step, and the average of this value was taken over the whole
-30-minute observation of the active region. The values for $\left\langle \frac{\Delta T_{max}}{\Delta t}\right\rangle $
-and the times of the associated flares are shown in Table 2 for each
-active region in set 2.
+As for the first set of flares, 150 x 150 arcsec temperature maps were calculated of the active regions associated with the set 2 flares.
+In this case the active regions were mapped at 2-minute intervals for 30 minutes preceding the start of the flare.
+The maximum, 95th percentile, 90th percentile, mean, standard deviation, 10th percentile, 5th percentile and minimum temperatures were then calculated for each temperature map for each flare in order to compare if and how the bulk temperature of the active regions changed before the flare.
+The 95th, 90th, 10th and 5th percentiles were calculated because the overall maximum and minimum may be affected by small numbers of unusually high or low temperature pixels, which may not accurately represent how the bulk temperature of the active region changes with time.
+Each of these parameters was plotted against time for each active region.
+Additionally, for each active region the change in the maximum temperature over time, $\frac{\Delta T_{max}}{\Delta t}$, was calculated for each time step, and the average of this value was taken over the whole 30-minute observation of the active region.
+The values for $\left\langle \frac{\Delta T_{max}}{\Delta t}\right\rangle$ and the times of the associated flares are shown in Table 2 for each active region in set 2. % Check this should be max
 
-The parameters used to investigate the set 2 active regions were also
-calculated and plotted for a non-flaring active region, AR11268, in
-order to compare how the change in temperature distributions differed
-between flaring and non-flaring regions. AR11268 was observed to almost
-complete a full transit of the solar disk between 2011-08-04 and 2011-08-14.
-During this time, temperature maps were calculated at 2-minute resolution
-for windows of 60 minutes once a day, between 00:00 and 00:58. $\left\langle \frac{\Delta T_{max}}{\Delta t}\right\rangle $
-values were calculated for each 60-minute period in the same way as
-for the flaring active regions. Table 3 shows the times of the observations
-and the values of $\left\langle \frac{\Delta T_{max}}{\Delta t}\right\rangle $.
+The parameters used to investigate the set 2 active regions were also calculated and plotted for a non-flaring active region, AR11268, in order to compare how the change in temperature distributions differed between flaring and non-flaring regions.
+AR11268 was observed to almost complete a full transit of the solar disk between 2011-08-04 and 2011-08-14.
+During this time, temperature maps were calculated at 2-minute resolution for windows of 60 minutes once a day, between 00:00 and 00:58. $\left\langle \frac{\Delta T_{max}}{\Delta t}\right\rangle$ values were calculated for each 60-minute period in the same way as for the flaring active regions.
+Table 3 shows the times of the observations and the values of $\left\langle \frac{\Delta T_{max}}{\Delta t}\right\rangle$.
 
 
 \section{Results}
 
-\subsection{Flare flux vs temperature }
-For each flare, the peak flux was plotted on a scatter graph against
-the mean temperature of the associated active region. This was done
-for four times in each case: 30 minutes before the flare start time,
-10 minutes before, 1 minute before and at the flare start time. These
-plots are shown in \ref{fig:flux-v-temp}. For the most part these
-temperatures are distributed seemingly at random in the temperature
-range between $log(T)\approx6.0$ and $log(T)\approx6.15$, with a
-few outliers below $log(T)=6.0$. However, some of the largest flares
-do appear to be arranged roughly in order of increasing temperature,
-and the single largest flare had a mean temperature near the top end
-of the range of temperatures found. The very cool outliers do appear
-to be roughly in line with this trend seen in the large flares, though
-with few or no points in between. If we discount the coolest active
-regions, the distribution below a peak flux of $10^{-4.5}$ has quite
-a steep outer edge, possibly forming another loose trend, particularly
-at lower fluxes. However, any such trend appears not to show any clear
-continuity with that seen for larger flares.
+\subsection{Flare flux vs temperature}
+For each flare, the peak flux was plotted on a scatter graph against the mean temperature of the associated active region. % Include other parameters in appendix?
+This was done for four times in each case: 30 minutes before the flare start time, 10 minutes before, 1 minute before and at the flare start time.
+These plots are shown in Fig \ref{fig:flux-v-temp}.
+For the most part these temperatures are distributed seemingly at random in the temperature range between $log(T)\approx6.0$ and $log(T)\approx6.15$, with a few outliers below $log(T)=6.0$.
+However, some of the largest flares do appear to be arranged roughly in order of increasing temperature, and the single largest flare had a mean temperature near the top end of the range of temperatures found.
+The very cool outliers do appear to be roughly in line with this trend seen in the large flares, though with few or no points in between.
+If we discount the coolest active regions, the distribution below a peak flux of $10^{-4.5}$ has quite a steep outer edge, possibly forming another loose trend, particularly at lower fluxes.
+However, any such trend appears not to show any clear continuity with that seen for larger flares.
 
-Heating and cooling in each active region with respect to the previous
-time (i.e., from 30 minutes to 10 minutes before the flares, from
-10 minutes to 1 minute, and from 1 minute to the flare start time)
-are indicated by red and blue arrows respectively on the top right
-and bottom plots in \ref{fig:flux-v-temp}. These arrows indicate
-that the mean temperatures of the active regions are quite stable
-over the 30 minutes studied. Even between 30 minutes and 10 minutes
-before the flare - the largest time difference - most changes in temperature
-are quite small. A few active regions cool significantly in this time,
-and one of these appears to reheat to roughly its original temperature
-by 1 minute before the flare. Many active regions appear to show no
-heating or cooling at all between any of the times plotted. What temperature
-changes there are are split roughly evenly between temperature increases
-and decreases, showing no obvious signs of systematic heating or cooling
-at any point before the flare.
+Heating and cooling in each active region with respect to the previous time (i.e., from 30 minutes to 10 minutes before the flares, from 10 minutes to 1 minute, and from 1 minute to the flare start time) are indicated by red and blue arrows respectively on the top right and bottom plots in Fig \ref{fig:flux-v-temp}.
+These arrows indicate that the mean temperatures of the active regions are quite stable over the 30 minutes studied.
+Even between 30 minutes and 10 minutes before the flare - the largest time difference - most changes in temperature are quite small.
+A few active regions cool significantly in this time, and one of these appears to reheat to roughly its original temperature by 1 minute before the flare.
+Many active regions appear to show no heating or cooling at all between any of the times plotted.
+What temperature changes there are are split roughly evenly between temperature increases and decreases, showing no obvious signs of systematic heating or cooling at any point before the flare.
 
 \begin{figure}
 \begin{centering}
 \includegraphics[width=1\textwidth]{figs/allflares} 
 \par\end{centering}
 
-\caption{Peak flux of each flare in set 1 plotted against the mean temperature
-of the corresponding active region at several different times. Top
-left: 30 minutes before the flare. Top right: 10 minutes before the
-flare. Bottom left: 1 minute before the flare. Bottom right: at the
-start time of the flare. The red and blue arrows on each plot indicate
-whether an active region's mean temperature has increased or decreased
-respectively, with respect to the previous plot. The dashed lines
-indicate flux thresholds for (from bottom to top) B, C, M and X class
-flares. \label{fig:flux-v-temp}}
+\caption{Peak flux of each flare in set 1 plotted against the mean temperature of the corresponding active region at several different times.
+Top left: 30 minutes before the flare.
+Top right: 10 minutes before the flare.
+Bottom left: 1 minute before the flare.
+Bottom right: at the start time of the flare.
+The red and blue arrows on each plot indicate whether an active region's mean temperature has increased or decreased respectively, with respect to the previous plot.
+The dashed lines indicate flux thresholds for (from bottom to top) B, C, M and X class flares.\label{fig:flux-v-temp}}
 \end{figure}
-
-
 
 \subsection{Temperature change over time}
 \subsubsection{Non-flaring active region}
-The plots in \ref{fig:ar11268-allparams} show the variation in the
-minimum, 5th percentile, 10th percentile, mean 90th percentile, 95th
-percentile and maximum temperatures for active region AR11268 during
-several 60-minute windows, with 2-minute resolution throughout each
-60-minute window. During each window, the temperature remains very
-stable, showing almost no variation for any of the parameters. The
-minimum temperature was usually between $log(T)=5.95$ and $6.0$,
-and was slightly below $log(T)=5.95$ during one of the 60-minute
-windows. Unlike the minima of several of the flaring active regions
-(see next subsection), the AR11268 minima show no signs of dropping
-to $log(T)=5.6$ at any point during any of the times the region was
-observed. The 5th, 10th, 90th and 95th percentiles were all very stable
-as well, in some cases remaining constant for the full hour. 5th and
-10th percentiles were usually at or slightly below $log(T)=6.0$,
-while 90th and 95th percentiles were usually at or slightly below
-$log(T)=6.1$. The mean was $log(T)\approx6.05$ for all windows,
-usually slightly cooler, and shows almost no discernible change in
-any of the plots. The maximum, like the minimum, was much more stable
-than those of the flaring regions, and never rose above $log(T)\approx6.2$.
+The plots in Fig\ref{fig:ar11268-allparams} show the variation in the minimum, 5th percentile, 10th percentile, mean 90th percentile, 95th percentile and maximum temperatures for active region AR11268 during several 60-minute windows.
+During each window, the temperature remains very stable, showing almost no variation for any of the parameters.
+The minimum temperature was usually between $log(T)=5.95$ and $6.0$, and was slightly below $log(T)=5.95$ during one of the 60-minute windows.
+Unlike the minima of several of the flaring active regions (see next subsection), the AR11268 minima show no signs of dropping to $log(T)=5.6$ at any point during any of the times the region was observed.
+The 5th, 10th, 90th and 95th percentiles were all very stable as well, in some cases remaining constant for the full hour.
+5th and 10th percentiles were usually at or slightly below $log(T)=6.0$, while 90th and 95th percentiles were usually at or slightly below $log(T)=6.1$.
+The mean was $log(T)\approx6.05$ for all windows, usually slightly cooler, and shows almost no discernible change in any of the plots.
+The maximum, like the minimum, was much more stable than those of the flaring regions, and never rose above $log(T)\approx6.2$.
 For most of the duration of the active region it was below $log(T)\approx6.15$.
 
-Overall, most of the temperature parameters for the non-flaring active
-region AR11268 are very similar to those seen for the flaring active
-regions shown above. The flaring active regions tend to have slightly
-higher temperatures, but all of them are similarly uniform with time
-and in all cases the temperatures are quite closely distributed. The
-main difference seen between the flaring regions and AR11268 is the
-large jumps seen in the minimum and maximum temperatures of the former,
-which are not seen at all for AR11268. This is particularly obvious
-for the maximum, which displays these jumps more frequently than the
-minimum in flaring regions. By contrast, the maximum of AR11268 shows
-almost no change during several of the windows studied, and always
-remains within the range $log(T)\approx6.1-6.2$. 
+Overall, most of the temperature parameters for the non-flaring active region AR11268 are very similar to those seen for the flaring active regions shown below.
+The flaring active regions tend to have slightly higher temperatures, but all of them are similarly uniform with time and in all cases the temperatures are quite closely distributed.
+The main difference seen between the flaring regions and AR11268 is the large jumps seen in the minimum and maximum temperatures of the former, which are not seen at all for AR11268.
+This is particularly obvious for the maximum, which displays these jumps more frequently than the minimum in flaring regions.
+By contrast, the maximum of AR11268 shows almost no change during several of the windows studied, and always remains within the range $log(T)\approx6.1-6.2$. 
 
-The mean time variability of the temperature, $\left\langle \frac{\Delta T}{\Delta t}\right\rangle $,
-was calculated for each 60-minute window for the 5th and 95th percentiles
-and the mean. These values are shown in Table \ref{tab:dTdt-11268},
-and are plotted as a bar graph in \ref{fig:Bar-graph-quiet}. Also
-shown in \ref{fig:Bar-graph-quiet} are the mean over all windows
-of the mean time variability for each parameter (which we take to
-be a background level of variability), and this value plus one, two
-and three standard deviations. From these plots it can be seen that
-none of the windows' variability is greater than three standard deviations
-above the background, and only a few exceed a single standard deviation.
+The mean time variability of the temperature, $\left\langle \frac{\Delta T}{\Delta t}\right\rangle$, was calculated for each 60-minute window for the 5th and 95th percentiles and the mean.
+These values are shown in Table \ref{tab:dTdt-11268}, and are plotted as a bar graph in Fig \ref{fig:Bar-graph-quiet}.
+Also shown in Fig \ref{fig:Bar-graph-quiet} are the mean over all windows of the mean time variability for each parameter (which we take to be a background level of variability), and this value plus one, two and three standard deviations.
+From these plots it can be seen that none of the windows' variability is greater than three standard deviations above the background, and only a few exceed a single standard deviation.
 
 \begin{figure}
 \begin{centering}
 \includegraphics[height=0.8\textheight]{figs/ar11268} 
 \par\end{centering}
 
-\caption{Plots of all parameters for active region AR11268. Colour-coding of
-the lines is the same as for \ref{fig:temps-v-time-xflares} and \ref{fig:temps-v-time-xflares-1}.
-Each plot shows how these temperatures change during a 60-minute window,
-each separated by a day. All of the temperature parameters vary only
-very slightly during each window, showing a very stable distribution
-overall. The maximum and minimum temperatures here are noticeably
-more stable than for many of the flaring active regions, and remain
-entirely within the temperature range plotted for all times investigated.
-\textbf{}\label{fig:ar11268-allparams}}
+\caption{Plots of all parameters for active region AR11268.
+Colour-coding of the lines is the same as for Figs \ref{fig:temps-v-time-xflares} and \ref{fig:temps-v-time-xflares-1}. % Sort out ordering of these
+Each plot shows how these temperatures change during a 60-minute window, each separated by a day.
+All of the temperature parameters vary only very slightly during each window, showing a very stable distribution overall.
+The maximum and minimum temperatures here are noticeably more stable than for many of the flaring active regions, and remain entirely within the temperature range plotted for all times investigated.\label{fig:ar11268-allparams}}
 \end{figure}
 
-
 \begin{table}
-\caption{Mean variability of temperature with time for the 5th and 95th percentiles
-(robust minimum and maximum) and the mean temperature for each of
-the observation windows of active region AR11268. The robust minimum
-and maximum are less predictable than the mean, showing no variation
-at all in some windows and relatively large amounts in others. The
-mean, on the other hand, shows a consistent low level of variation.
-Note that the window for 2011-08-12 is absent, since temperature maps
-could not be calculated for the full window. \label{tab:dTdt-11268}}
-
-
-%\centering{}\input{dTdt-11268.tex} 
+\caption{Mean variability of temperature with time for the 5th and 95th percentiles (robust minimum and maximum) and the mean temperature for each of the observation windows of active region AR11268.
+The robust minimum and maximum are less predictable than the mean, showing no variation at all in some windows and relatively large amounts in others.
+The mean, on the other hand, shows a consistent low level of variation.
+Note that the window for 2011-08-12 is absent, since temperature maps could not be calculated for the full window.\label{tab:dTdt-11268}}
+%\centering{}\input{dTdt-11268.tex}
 \end{table}
-
 
 \begin{figure}
 \begin{centering}
 \includegraphics[width=0.32\textwidth]{figs/dTdt-11268-5th}\includegraphics[width=0.32\textwidth]{figs/dTdt-11268-mean}\includegraphics[width=0.32\textwidth]{figs/dTdt-11268-95th}
 \par\end{centering}
 
-\caption{Bar graph of $\langle\frac{\Delta T_{5th}}{\Delta t}\rangle$ (left),
-$\langle\frac{\Delta T_{mean}}{\Delta t}\rangle$ (centre) and $\langle\frac{\Delta T_{95th}}{\Delta t}\rangle$
-(right), as shown in Table \ref{tab:dTdt-11268}, for all of the time
-windows during which the non-flaring active region was mapped. On
-each plot the yellow dashed line shows the average value over all
-windows, and the light orange, dark orange and red lines indicate
-the mean plus one, two and three times the standard deviation over
-all windows, respectively. Percentage values in the legend indicate
-the proportion of windows in which the variability exceeds that amount.
-\label{fig:Bar-graph-quiet}}
+\caption{Bar graph of $\langle\frac{\Delta T_{5th}}{\Delta t}\rangle$ (left), $\langle\frac{\Delta T_{mean}}{\Delta t}\rangle$ (centre) and $\langle\frac{\Delta T_{95th}}{\Delta t}\rangle$ (right), as shown in Table \ref{tab:dTdt-11268}, for all of the time windows during which the non-flaring active region was mapped.
+On each plot the yellow dashed line shows the average value over all windows, and the light orange, dark orange and red lines indicate the mean plus one, two and three times the standard deviation over all windows, respectively.
+Percentage values in the legend indicate the proportion of windows in which the variability exceeds that amount.\label{fig:Bar-graph-quiet}}
 \end{figure}
 
 \subsubsection{Flaring active regions}
-\ref{fig:temps-v-time-xflares} and \ref{fig:temps-v-time-xflares-1}
-show how the temperature properties of the active region changed during
-the 30 minutes preceding each flare in set 2. Each flare is plotted
-separately but on the same temperature scale so that any changes common
-to many flares can be easily noticed. In each plot, the maximum is
-plotted in black, the 95th percentile in orange, the 90th percentile
-in purple, the mean in light blue, with error bars indicating the
-standard deviation, the 10th percentile in red, the 5th percentile
-in green and the minimum in dark blue. The full temperature range
-of the parameters is plotted in the graphs shown in \ref{fig:temps-v-time-xflares},
-but details of the mean and percentiles are difficult to discern due
-to the wide range of the minimum and maximum. \ref{fig:temps-v-time-xflares-1}
-therefore shows the same plots as \ref{fig:temps-v-time-xflares},
-but with a smaller temperature range so that small changes in the
-mean and percentiles can more easily be seen.
+Figs \ref{fig:temps-v-time-xflares} and \ref{fig:temps-v-time-xflares-1} show how the temperature properties of the active region changed during the 30 minutes preceding each flare in set 2.
+Each flare is plotted separately but on the same temperature scale so that any changes common to many flares can be easily noticed.
+In each plot, the maximum is plotted in black, the 95th percentile in orange, the 90th percentile in purple, the mean in light blue, with error bars indicating the standard deviation, the 10th percentile in red, the 5th percentile in green and the minimum in dark blue.
+The full temperature range of the parameters is plotted in the graphs shown in Fig \ref{fig:temps-v-time-xflares}, but details of the mean and percentiles are difficult to discern due to the wide range of the minimum and maximum.
+Fig \ref{fig:temps-v-time-xflares-1} therefore shows the same plots as Fig \ref{fig:temps-v-time-xflares}, but with a smaller temperature range so that small changes in the mean and percentiles can more easily be seen.
 
-The maximum temperature of several of the active regions is steady
-at slightly below $log(T)=6.2$ for the entire 30 minutes plotted,
-and varies only by very small amounts during this time. Some other
-active regions show a similarly flat profile with time, but at $log(T)\gtrsim6.4$.
-The remainder appear to switch sharply between these two regimes,
-with varying frequencies. The maxima of these regions are a little
-more variable than the others, particularly within the hotter temperature
-range, between $log(T)\approx6.4$ and $log(T)=6.6$. These hotter
-maxima are significantly hotter than the 95th and 90th percentiles,
-which show no similar jumps when the maximum changes. This suggests
-that the maximum temperature must be found only in one or a very small
-number of pixels, so that the means and percentiles are not affected.
+The maximum temperature of several of the active regions is steady at slightly below $log(T)=6.2$ for the entire 30 minutes plotted, and varies only by very small amounts during this time.
+Some other active regions show a similarly flat profile with time, but at $log(T)\gtrsim6.4$.
+The remainder appear to switch sharply between these two regimes, with varying frequencies.
+The maxima of these regions are a little more variable than the others, particularly within the hotter temperature range, between $log(T)\approx6.4$ and $log(T)=6.6$.
+These hotter maxima are significantly hotter than the 95th and 90th percentiles, which show no similar jumps when the maximum changes.
+This suggests that the maximum temperature must be found only in one or a very small number of pixels, so that the mean and percentiles are not affected.
 
-The 95th and 90th percentiles are very similar for all active regions,
-and in some cases appear to be identical for much of the duration.
-This demonstrates a very narrow distribution of temperatures. Both
-are typically between $log(T)=6.1$ and $6.15$, only slightly cooler
-than the cool maxima, and again show very little variation over the
-30 minutes leading up to the flare.
+The 95th and 90th percentiles are very similar for all active regions, and in some cases appear to be identical for much of the duration.
+This demonstrates a very narrow distribution of temperatures.
+Both are typically between $log(T)=6.1$ and $6.15$, only slightly cooler than the cool maxima, and again show very little variation over the 30 minutes leading up to the flare.
 
-Mean temperatures are uniform, with each active region showing almost
-no change in the mean temperature at all throughout the 30 minutes
-before the flare. A few active regions show a very small increase
-or decrease in the mean, typically within the 15 minutes or so before
-the flare. Almost every active region had a mean between $log(T)=6.05$
-and $6.1$.
+Mean temperatures are uniform, with each active region showing almost no change in the mean temperature at all throughout the 30 minutes before the flare.
+A few active regions show a very small increase or decrease in the mean, typically within the 15 minutes or so before the flare.
+Almost every active region had a mean between $log(T)=6.05$ and $6.1$.
 
-The 10th and 5th percentiles (robust minima) are also very uniform,
-remaining constant for several active regions and changing only very
-slightly for the rest. They are typically both between $log(T)=6.0$
-and $6.05$, although the 10th percentile is slightly above $log(T)=6.05$
-for a few particularly hot active regions.
+The 10th and 5th percentiles (robust minima) are also very uniform, remaining constant for several active regions and changing only very slightly for the rest.
+They are typically both between $log(T)=6.0$ and $6.05$, although the 10th percentile is slightly above $log(T)=6.05$ for a few particularly hot active regions.
 
-The minimum temperatures show a similar behaviour to the maxima, though
-to a lesser extent. For the most part the minimum of each active region
-is between $log(T)=5.95$ and $6.0$, and changes very little. However,
-for some active regions it does sharply transition to $log(T)=5.6$,
-the minimum possible value with this method. This very low minimum
-is usually only found for a single time-step, but there are also some
-extended periods of time where it is found. As with the maximum temperatures,
-this extremely low value appears not to have any noticeable effect
-on the mean or percentiles in any active region, suggesting it must
-be true for one or only a few pixels.
+The minimum temperatures show a similar behaviour to the maxima, though to a lesser extent.
+For the most part the minimum of each active region is between $log(T)=5.95$ and $6.0$, and changes very little.
+However, for some active regions it does sharply transition to $log(T)=5.6$, the minimum possible value with this method.
+This very low minimum is usually only found for a single time-step, but there are also some extended periods of time where it is found.
+As with the maximum temperatures, this extremely low value appears not to have any noticeable effect on the mean or percentiles in any active region, suggesting it must be true for one or only a few pixels.
 
-The mean variability of the robust minima and maxima and the mean
-are shown in Table \ref{tab:dTdt} and plotted in \ref{fig:Bar-graph-flaring}.
-The dashed lines in these plots again show the mean and the mean plus
-one, two and three standard deviations of the variability of AR11268
-in all windows. The robust minima and maxima show only slightly more
-variability than the non-flaring region, with less than a third of
-active regions in each case reaching a standard deviation above the
-background level. The mean, however, is above the background in all
-but one active region, with almost half of the active regions exceeding
-the background by $1\sigma$ and one region exceeding it by $3\sigma$.
+The mean variability of the robust minima and maxima and the mean are shown in Table \ref{tab:dTdt} and plotted in Fig \ref{fig:Bar-graph-flaring}.
+The dashed lines in these plots again show the mean and the mean plus one, two and three standard deviations of the variability of AR11268 in all windows.
+The robust minima and maxima show only slightly more variability than the non-flaring region, with less than a third of active regions in each case reaching a standard deviation above the background level.
+The mean, however, is above the background in all but one active region, with almost half of the active regions exceeding the background by $1\sigma$ and one region exceeding it by $3\sigma$.
 
 \begin{figure}
 \begin{centering}
 \includegraphics[width=0.7\textwidth]{figs/allars_0} 
 \par\end{centering}
 
-\caption{Plots of the minimum, (dark blue lines) 5th percentile (green lines),
-10th percentile (red), mean (light blue), 90th percentile (purple),
-95th percentile (orange) and maximum (black) temperatures for the
-active region associated with the first six flares in set 2 for the
-30 minutes leading up to the flare start time, which is indicated
-for each flare. Error bars on the mean indicate the standard deviation.
-In all cases the mean, standard deviation and percentiles vary very
-little throughout the sampled time and are closely grouped between
-$log(T)=5.95$ and $6.2$. The minima are typically around $log(T)=6.0$
-and also varies only a small amount for the most part, but does in
-some cases sharply switch to $log(T)=5.6$, the lowest temperature
-possible with this method. Maximum temperatures similarly switch between
-relatively low values and much higher ranges, where they are slightly
-more changeable than the minimum values. \label{fig:temps-v-time-xflares}}
+\caption{Plots of the minimum, (dark blue lines) 5th percentile (green lines), 10th percentile (red), mean (light blue), 90th percentile (purple), 95th percentile (orange) and maximum (black) temperatures for the active region associated with the first six flares in set 2 for the 30 minutes leading up to the flare start time, which is indicated for each flare.
+Error bars on the mean indicate the standard deviation.
+In all cases the mean, standard deviation and percentiles vary very little throughout the sampled time and are closely grouped between $log(T)=5.95$ and $6.2$.
+The minima are typically around $log(T)=6.0$ and also varies only a small amount for the most part, but does in some cases sharply switch to $log(T)=5.6$, the lowest temperature possible with this method.
+Maximum temperatures similarly switch between relatively low values and much higher ranges, where they are slightly more changeable than the minimum values.\label{fig:temps-v-time-xflares}}
 \end{figure}
-
 
 \begin{figure}
 \begin{centering}
 \includegraphics[width=0.8\textwidth]{figs/allars_1} 
 \par\end{centering}
 
-\caption{Same plots as \ref{fig:temps-v-time-xflares} for the next six flares.
+\caption{Same plots as Fig \ref{fig:temps-v-time-xflares} for the next six flares.
 \label{fig:temps-v-time-xflares-2}}
 \end{figure}
-
 
 \begin{figure}
 \begin{centering}
 \includegraphics[width=0.8\textwidth]{figs/allars_2} 
 \par\end{centering}
 
-\caption{Same plots as \ref{fig:temps-v-time-xflares-2} for the next six flares.
+\caption{Same plots as Fig \ref{fig:temps-v-time-xflares-2} for the next six flares.
 \label{fig:temps-v-time-xflares-3}}
 \end{figure}
-
 
 \begin{figure}
 \begin{centering}
 \includegraphics[width=0.8\textwidth]{figs/allars_3} 
 \par\end{centering}
 
-\caption{Same plots as \ref{fig:temps-v-time-xflares-3} for the next four
-flares.\label{fig:temps-v-time-xflares-4}}
+\caption{Same plots as Fig \ref{fig:temps-v-time-xflares-3} for the next four flares.\label{fig:temps-v-time-xflares-4}}
 \end{figure}
-
 
 \begin{figure}
 \begin{centering}
 \includegraphics[width=0.8\textwidth]{figs/allars_close_0} 
 \par\end{centering}
 
-\caption{Plots of the minimum, 5th percentile, 10th percentile, mean 90th percentile,
-95th percentile and maximum temperatures for the active region associated
-with each of the first six flares of set 2. Plots are the same as
-\ref{fig:ar11268-allparams}, but restricted to between $log(T)=5.9$
-and $6.2$ so small variations in the mean and percentiles can be
-seen more clearly.\label{fig:temps-v-time-xflares-1}}
+\caption{Plots of the minimum, 5th percentile, 10th percentile, mean 90th percentile, 95th percentile and maximum temperatures for the active region associated with each of the first six flares of set 2.
+Plots are the same as Fig \ref{fig:ar11268-allparams}, but restricted to between $log(T)=5.9$ and $6.2$ so small variations in the mean and percentiles can be seen more clearly.\label{fig:temps-v-time-xflares-1}}
 \end{figure}
-
 
 \begin{figure}
 \begin{centering}
 \includegraphics[width=0.8\textwidth]{figs/allars_close_1} 
 \par\end{centering}
 
-\caption{Same plots as \ref{fig:temps-v-time-xflares-1} for the next six flares.
+\caption{Same plots as Fig \ref{fig:temps-v-time-xflares-1} for the next six flares.
 \label{fig:temps-v-time-xflares-1-1}}
 \end{figure}
 
@@ -632,152 +330,81 @@ seen more clearly.\label{fig:temps-v-time-xflares-1}}
 \includegraphics[width=0.8\textwidth]{figs/allars_close_2} 
 \par\end{centering}
 
-\caption{Same plots as \ref{fig:temps-v-time-xflares-1-1} for the next six
-flares.\label{fig:temps-v-time-xflares-1-2}}
+\caption{Same plots as Fig \ref{fig:temps-v-time-xflares-1-1} for the next six flares.\label{fig:temps-v-time-xflares-1-2}}
 \end{figure}
-
 
 \begin{figure}
 \begin{centering}
 \includegraphics[width=0.8\textwidth]{figs/allars_close_3} 
 \par\end{centering}
 
-\caption{Same plots as \ref{fig:temps-v-time-xflares-1-2} for the next four
-flares. \label{fig:temps-v-time-xflares-1-3}}
+\caption{Same plots as Fig \ref{fig:temps-v-time-xflares-1-2} for the next four flares.\label{fig:temps-v-time-xflares-1-3}}
 \end{figure}
 
-
 \begin{table}
-\caption{Mean variability of temperature with time for the 5th and 95th percentiles
-(robust minimum and maximum) and the mean temperature for each of
-the observed active regions in set 2. As with the non-flaring region,
-the variabilities of the robust minimum and maximum are very high
-for some regions and zero for others. Again, similar to AR11268, the
-mean is more uniform from one region to the next, making it of greater
-use for predictive purposes.\label{tab:dTdt}}
-
-
+\caption{Mean variability of temperature with time for the 5th and 95th percentiles (robust minimum and maximum) and the mean temperature for each of the observed active regions in set 2.
+As with the non-flaring region, the variabilities of the robust minimum and maximum are very high for some regions and zero for others.
+Again, similar to AR11268, the mean is more uniform from one region to the next, making it of greater use for predictive purposes.\label{tab:dTdt}}
 %\centering{}\input{dTdt.tex} 
 \end{table}
-
 
 \begin{figure}
 \begin{centering}
 \includegraphics[width=0.32\textwidth]{figs/dTdt-5th}\includegraphics[width=0.32\textwidth]{figs/dTdt-mean}\includegraphics[width=0.32\textwidth]{figs/dTdt-95th}
 \par\end{centering}
 
-\caption{Bar graph of $\langle\frac{\Delta T_{5th}}{\Delta t}\rangle$ (left),
-$\langle\frac{\Delta T_{mean}}{\Delta t}\rangle$ (centre) and $\langle\frac{\Delta T_{95th}}{\Delta t}\rangle$
-(right), as shown in Table \ref{tab:dTdt}, for all active regions
-in set 2. On each plot the yellow dashed line shows the average of
-the respective value for the non-flaring region over all windows investigated,
-and the light orange, dark orange and red lines indicate the mean
-plus one, two and three times the standard deviation over all windows,
-respectively.\label{fig:Bar-graph-flaring}}
+\caption{Bar graph of $\langle\frac{\Delta T_{5th}}{\Delta t}\rangle$ (left), $\langle\frac{\Delta T_{mean}}{\Delta t}\rangle$ (centre) and $\langle\frac{\Delta T_{95th}}{\Delta t}\rangle$ (right), as shown in Table \ref{tab:dTdt}, for all active regions in set 2.
+On each plot the yellow dashed line shows the average of the respective value for the non-flaring region over all windows investigated, and the light orange, dark orange and red lines indicate the mean plus one, two and three times the standard deviation over all windows, respectively.\label{fig:Bar-graph-flaring}}
 \end{figure}
-
 
 
 \section{Discussion}
 
 \subsection{Performance of method}
-It should be noted that this method does not take into account several
-factors pertinent to determination of active region temperatures.
-First, the effect of LOS integration is not corrected for in any way,
-such as with background subtraction. This will be less of a problem
-while active regions are on the solar disk (when the measured LOS
-emission will be dominated by the active regions loops) than when
-they are over the limb where there is significant background contamination,
-but it should still be considered when reviewing these results. The
-method is also applied under that assumptions that the plasma being
-studied is in local thermal equilibrium and that the plasma DEM has
-a narrow Gaussian distribution. Both of these assumptions are potential
-causes of error in active regions. However, if these assumptions hold
-then the results should be reliable as demonstrated by the validation
-in \ref{chap:Validation}.
+It should be noted that this method does not take into account several factors pertinent to determination of active region temperatures.
+First, the effect of LOS integration is not corrected for in any way, such as with background subtraction.
+This will be less of a problem while active regions are on the solar disk (when the measured LOS emission will be dominated by the active regions loops) than when they are over the limb where there is significant background contamination, but it should still be considered when reviewing these results.
+The method is also applied under that assumptions that the plasma being studied is in local thermal equilibrium and that the plasma DEM has a narrow Gaussian distribution.
+Both of these assumptions are potential causes of error in active regions.
+%However, if these assumptions hold then the results should be reliable as demonstrated by the validation in \ref{chap:Validation}. % Ref to thesis? or just state this?
 
-Overall, the method performs very well. The temperatures found for
-all active regions are consistent with the literature and with the
-results of similar methods such as those of e.g.: \citet{Aschwanden2013,Warren2008,DelZanna2013}.
-In particular, the agreement with \citet{Warren2008} provides support
-for the validity and accuracy of this work, since different instruments
-and sets of emission lines are used, suggesting that the results are
-representative of the corona, rather than an artefact of the instrument
-temperature response functions. The narrow temperature distributions
-around $log(T)\approx6.0$ also confirm that although active region
-loops themselves are very hot, the surrounding plasma is much more
-similar to quiet sun. In addition to its accuracy, this method performs
-much faster than most others, allowing it to take much greater advantage
-of the very high spatial and temporal resolution of AIA images, which
-are often resampled to reduce calculation time.
+Overall, the method performs very well. The temperatures found for all active regions are consistent with the literature and with the results of similar methods such as those of e.g.: \citet{Aschwanden2013,Warren2008,DelZanna2013}.
+In particular, the agreement with \citet{Warren2008} provides support for the validity and accuracy of this work, since different instruments and sets of emission lines are used, suggesting that the results are representative of the corona, rather than an artefact of the instrument temperature response functions.
+The narrow temperature distributions around $log(T)\approx6.0$ also confirm that although active region loops themselves are very hot, the surrounding plasma is much more similar to quiet sun.
+In addition to its accuracy, this method performs much faster than most others, allowing it to take much greater advantage of the very high spatial and temporal resolution of AIA images, which are often resampled to reduce calculation time.
 
-Finally, it is worth remembering that this study only looks at the
-bulk properties of the active region temperatures. Any temperature
-changes leading up to flares may occur on the scale of only a few
-pixels. For this reason, future studies should investigate the full
-distribution of temperatures in more detail and consider the small-scale
-motions of plasma at particular temperatures.
-
+Finally, it is worth remembering that this study only looks at the bulk properties of the active region temperatures.
+Any temperature changes leading up to flares may occur on the scale of only a few pixels.
+For this reason, future studies should investigate the full distribution of temperatures in more detail and consider the small-scale motions of plasma at particular temperatures.
 
 \subsection{Temperatures of flaring active regions}
-From this study, it appears that there is no immediately clear link
-between solar flares and the evolution of active region temperatures
-prior to them flaring. However, there are some promising lines of
-inquiry which should be investigated further. \ref{fig:temps-v-time-xflares}
-and \ref{fig:temps-v-time-xflares-1} show that there is no clear
-trend in any of the temperature parameters investigated before large
-flares occur, though several active regions show large jumps in the
-minimum and maximum temperatures to very low and high temperatures.
-These large jumps are not present in the active region investigated,
-AR11268, which suggests a possible way in which flaring and non-flaring
-regions which may be distinguished before flares occur. This link
-is further demonstrated by the values for the average rate of change
-of the maximum temperature, $\left\langle \frac{\Delta T_{max}}{\Delta t}\right\rangle $,
-which shows extremely slow change for AR11128 but much faster change
-for many of the flaring active regions. However, this may be of limited
-usefulness since these sharp transitions only occur in some of the
-flaring active regions but not in others. AR11268 is also slightly
-cooler than most of the flaring active regions. More non-flaring regions
-should be investigated to confirm these differences.
+From this study, it appears that there is no immediately clear link between solar flares and the evolution of active region temperatures prior to them flaring.
+However, there are some promising lines of inquiry which should be investigated further.
+Figs \ref{fig:temps-v-time-xflares} and \ref{fig:temps-v-time-xflares-1} show that there is no clear trend in any of the temperature parameters investigated before large flares occur, though several active regions show large jumps in the minimum and maximum temperatures to very low and high temperatures.
+These large jumps are not present in the non-flaring active region investigated, AR11268, which suggests a possible way in which flaring and non-flaring regions which may be distinguished before flares occur.
+This link is further demonstrated by the values for the average rate of change of the maximum temperature, $\left\langle \frac{\Delta T_{max}}{\Delta t}\right\rangle $, which shows extremely slow change for AR11128 but much faster change for many of the flaring active regions.
+However, this may be of limited usefulness since these sharp transitions only occur in some of the flaring active regions but not in others.
+AR11268 is also slightly cooler than most of the flaring active regions.
+More non-flaring regions should be investigated to confirm these differences.
 
-Similarly, no definitive correlation can be seen between peak flare
-flux and active region temperature, with most flares being quite evenly
-distributed within a certain range of temperatures. However, the largest
-flares do appear to form a loose correlation. The coolest active regions
-studied may also be be part of the same progression, though they are
-noticeably removed from the other points on the plot so it is possible
-they are merely outliers. However, if they are not outliers, the line
-these points form with the largest flares may describe a maximum peak
-flux attainable for flares from an active region at a given temperature.
-If such a relation exists It would make an extremely useful part of
-a flare prediction algorithm, but a much larger sample of flares is
-needed in order to properly determine whether or not this connection
-is real.
+Similarly, no definitive correlation can be seen between peak flare flux and active region temperature, with most flares being quite evenly distributed within a certain range of temperatures.
+However, the largest flares do appear to form a loose correlation.
+The coolest active regions studied may also be be part of the same progression, though they are noticeably removed from the other points on the plot so it is possible they are merely outliers.
+However, if they are not outliers, the line these points form with the largest flares may describe a maximum peak flux attainable for flares from an active region at a given temperature.
+If such a relation exists it would make an extremely useful part of a flare prediction algorithm, but a much larger sample of flares is needed in order to properly determine whether or not this connection is real.
 
 
-\section{Conclusion}
+\section{Conclusion} % Merge into section 4?
 
-Although the results of this study are not conclusive, they do suggest
-a number of promising directions for future research. The mean active
-region temperature and peak flare flux mostly have no clear correlation,
-but may show some very loose trends over a few small temperature ranges.
-This needs to be investigated further with a much larger sample of
-flares. If these trends are shown to be real with a larger sample
-size, they may describe a maximum peak flare flux for an active region
-at a given temperature, which would prove to be a very useful tool
-in predicting large events.
+Although the results of this study are not conclusive, they do suggest a number of promising directions for future research.
+The mean active region temperature and peak flare flux mostly have no clear correlation, but may show some very loose trends over a few small temperature ranges.
+This needs to be investigated further with a much larger sample of flares.
+If these trends are shown to be real with a larger sample size, they may describe a maximum peak flare flux for an active region at a given temperature, which would prove to be a very useful tool in predicting large events.
 
-Similarly, the variability over time of flaring active regions' temperature
-distributions shows the potential for predictive capability but needs
-a much larger sample size and a more rigorous definition of the background
-variability. The variability in the mean temperature of the regions
-studied, while small, is significantly greater than that of the non-flaring
-region investigated, exceeding the latter's mean variability by a
-standard deviation in $45.5\%$ of cases.
+Similarly, the variability over time of flaring active regions' temperature distributions shows the potential for predictive capability but needs a much larger sample size and a more rigorous definition of the background variability.
+The variability in the mean temperature of the regions studied, while small, is significantly greater than that of the non-flaring region investigated, exceeding the latter's mean variability by a standard deviation in $45.5\%$ of cases.
 
-This investigation demonstrates that the extremely fast, automated
-temperature analysis provided by the temperature map method can be
-a very powerful tool for probing dynamic processes in the corona.
+This investigation demonstrates that the extremely fast, automated temperature analysis provided by the temperature map method can be a very powerful tool for probing dynamic processes in the corona.
 
 \bibliographystyle{plainnat}
 \bibliography{library}
