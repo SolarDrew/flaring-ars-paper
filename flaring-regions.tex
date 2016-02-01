@@ -1,12 +1,8 @@
 \documentclass[namedreferences]{solarphysics}
-%\usepackage[authoryear, round]{natbib}
-%\usepackage{longtable}
-%\usepackage{amstext}
-%\usepackage{amssymb}
-%\usepackage{graphicx}
-%\usepackage[margin=2cm]{geometry}
+
 \usepackage[hyperref,optionalrh,showbiblabels]{spr-sola-addons} % For Solar Physics 
 %\usepackage[optionalrh]{spr-sola-addons} % For Solar Physics 
+%\usepackage{epsfig}          % For eps figures, old commands
 \usepackage{graphicx}        % For eps figures, newer & more powerfull
 %\usepackage{courier}         % Change the \texttt command to courier style
 %\usepackage{amssymb}        % useful mathematical symbols
@@ -14,14 +10,93 @@
 \usepackage{breakurl}        % For breaking URLs easily trough lines
 \def\UrlFont{\sf}            % define the fonts for the URLs
 
-\title{Case study: flaring active regions}
-\author{Andrew Leonard}
+% General definitions
+% please place your own definitions here and don't use \def but
+% \newcommand{}{} or 
+% \renewcommand{}{} if it is already defined in LaTeX
 
+\newcommand{\BibTeX}{\textsc{Bib}\TeX}
+\newcommand{\etal}{{\it et al.}}
+
+% Definitions for equations
+\renewcommand{\vec}[1]{{\mathbfit #1}}
+\newcommand{\deriv}[2]{\frac{{\mathrm d} #1}{{\mathrm d} #2}}
+\newcommand{\rmd}{ {\ \mathrm d} }
+\newcommand{\uvec}[1]{ \hat{\mathbf #1} }
+\newcommand{\pder}[2]{ \f{\partial #1}{\partial #2} }
+\newcommand{\grad}{ {\bf \nabla } }
+\newcommand{\curl}{ {\bf \nabla} \times}
+\newcommand{\vol}{ {\mathcal V} }
+\newcommand{\bndry}{ {\mathcal S} }
+\newcommand{\dv}{~{\mathrm d}^3 x}
+\newcommand{\da}{~{\mathrm d}^2 x}
+\newcommand{\dl}{~{\mathrm d} l}
+\newcommand{\dt}{~{\mathrm d}t}
+\newcommand{\intv}{\int_{\vol}^{}}
+\newcommand{\inta}{\int_{\bndry}^{}}
+\newcommand{\avec}{ \vec A}
+\newcommand{\ap}{ \vec A_p}
+
+\newcommand{\bb}{\vec B}
+\newcommand{\jj}{ \vec j}
+\newcommand{\rr}{ \vec r}
+\newcommand{\xx}{ \vec x}
+
+% Definitions for the journal names
+\newcommand{\adv}{    {\it Adv. Space Res.}} 
+\newcommand{\annG}{   {\it Ann. Geophys.}} 
+\newcommand{\aap}{    {\it Astron. Astrophys.}}
+\newcommand{\aaps}{   {\it Astron. Astrophys. Suppl.}}
+\newcommand{\aapr}{   {\it Astron. Astrophys. Rev.}}
+\newcommand{\ag}{     {\it Ann. Geophys.}}
+\newcommand{\aj}{     {\it Astron. J.}} 
+\newcommand{\apj}{    {\it Astrophys. J.}}
+\newcommand{\apjl}{   {\it Astrophys. J. Lett.}}
+\newcommand{\apss}{   {\it Astrophys. Space Sci.}} 
+\newcommand{\cjaa}{   {\it Chin. J. Astron. Astrophys.}} 
+\newcommand{\gafd}{   {\it Geophys. Astrophys. Fluid Dyn.}}
+\newcommand{\grl}{    {\it Geophys. Res. Lett.}}
+\newcommand{\ijga}{   {\it Int. J. Geomagn. Aeron.}}
+\newcommand{\jastp}{  {\it J. Atmos. Solar-Terr. Phys.}} 
+\newcommand{\jgr}{    {\it J. Geophys. Res.}}
+\newcommand{\mnras}{  {\it Mon. Not. Roy. Astron. Soc.}}
+\newcommand{\nat}{    {\it Nature}}
+\newcommand{\pasp}{   {\it Pub. Astron. Soc. Pac.}}
+\newcommand{\pasj}{   {\it Pub. Astron. Soc. Japan}}
+\newcommand{\pre}{    {\it Phys. Rev. E}}
+\newcommand{\solphys}{{\it Solar Phys.}}
+\newcommand{\sovast}{ {\it Soviet  Astron.}} 
+\newcommand{\ssr}{    {\it Space Sci. Rev.}} 
+\chardef\us=`\_
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
-\maketitle
+\begin{article}
+\begin{opening}
 
-\abstract{This paper presents a study which investigates the temperature distributions of several flaring active regions.
+\title{On the temperature of flaring active regions}
+
+\author[addressref=aff1,corref,email={a.j.leonard@sheffield.ac.uk}]{\inits{A.J.}\fnm{Andrew}~\lnm{Leonard}}%\sep
+\author[addressref=aff2,email={hum2@aber.ac.uk}]{\inits{H.}\fnm{Huw}~\lnm{Morgan}}%\sep
+%\author{P.~\surname{Author-a}$^{1}$\sep
+%        E.~\surname{Author-b}$^{1}$\sep
+%        M.~\surname{Author-c}$^{2}$      
+%       }
+
+%   \institute{$^{1}$ First affiliation
+%                     email: \url{e.mail-a} email: \url{e.mail-b}\\ 
+%              $^{2}$ Second affiliation
+%                     email: \url{e.mail-c} \\
+%             }
+\address[id=aff1]{University of Sheffield}
+\address[id=aff2]{Aberystwyth University}
+
+\runningauthor{Leonard et al.}
+\runningtitle{On the temperature of flaring active regions}
+
+\begin{abstract}
+This paper presents a study which investigates the temperature distributions of several flaring active regions.
 The aim is to search for a common signature of flare activity in these temperature distributions before flares occur, which, if found, could form the basis of a flare prediction algorithm.
 This investigation looks at the temperature distributions of two sets of flaring active regions, one set associated with flares of varying classes, and the other set associated exclusively with X class flares.
 For the first set, the mean temperature of each active region was plotted against the class of the flare for a number of different times before the flare start time, and a loose trend was found for some of the largest flares.
@@ -29,17 +104,21 @@ The second set was investigated over the hour preceding each flare and a measure
 This value was compared to the equivalent for a non-flaring active region observed over several hour-long windows.
 It was found that the flaring active regions were typically much more variable than the non-flaring region.
 This was most clearly seen in the variability of the mean temperature, which exceeded the average variability of the non-flaring region mean temperature in all but one case.
-This notable difference between the behaviour of the flaring regions and non-flaring region is worthy of further investigation, and demonstrates that this method could be used as part of a flare-prediction algorithm.}
+This notable difference between the behaviour of the flaring regions and non-flaring region is worthy of further investigation, and demonstrates that this method could be used as part of a flare-prediction algorithm.
+\end{abstract}
+\keywords{}
+\end{opening}
+%-------------------------------------------------
 
 \section{Introduction}
+\label{S-Introduction}
 
 Solar flares are a complicated and as yet not fully understood phenomenon.
 In particular, growing emphasis has been placed in recent years on studying how to predict when a flare will occur, since flares and associated coronal phenomena can have significant detrimental effects on a variety of modern electronic infrastructure at or near Earth.
 Many studies have been devoted to the topic of flare prediction (e.g., \citet{Korsos2014,Ahmed2011,Bloomfield2012}, etc.), but few have looked at the temperature of the active regions associated with flares before the flare occurs.
 
 \subsection{Active region dynamics}
-Solar flares are large releases of magnetic free non-potential energy due to magnetic reconnection.
-This release of energy results in rapid localised heating of plasma to several million Kelvins.
+Solar flares are large releases of magnetic free non-potential energy due to magnetic reconnection. This release of energy results in rapid localised heating of plasma to several million Kelvins.
 Due to their very high temperatures, flares emit very strongly in X-rays and EUV.
 Although they do emit throughout the spectrum \citep{Fletcher2011}, only extremely large events can be seen in visible light even over the photospheric emission, such as the Carrington event of 1859 \citep{Carrington1859}.
 Flares occur most in active regions which are developing rapidly, where flux is still emerging and the complexity of the magnetic topology increases very quickly, since the coronal field does not have time to reconfigure in a steady manner to rapid changes in the photosphere.
@@ -86,7 +165,6 @@ More recent studies which compare such results against temperatures calculated u
 Though there have been many studies of temperature during flares, none have looked in detail at the temperatures, and changes in temperature, of active regions before the flare occurs.
 This work aims to address this issue by searching for flare precursors in the temperature distributions of flaring active regions.
 
-
 \section{Method}
 
 The single-parameter temperature map method described in \cite{Leonard} was used to investigate the changes in the temperatures over time of two sets of flaring active regions and one non-flaring active region.
@@ -129,7 +207,6 @@ The parameters used to investigate the set 2 active regions were also calculated
 AR11268 was observed to almost complete a full transit of the solar disk between 2011-08-04 and 2011-08-14.
 During this time, temperature maps were calculated at 2-minute resolution for windows of 60 minutes once a day, between 00:00 and 00:58. $\left\langle \frac{\Delta T_{max}}{\Delta t}\right\rangle$ values were calculated for each 60-minute period in the same way as for the flaring active regions.
 Table 3 shows the times of the observations and the values of $\left\langle \frac{\Delta T_{max}}{\Delta t}\right\rangle$.
-
 
 \section{Results}
 
@@ -342,7 +419,6 @@ Again, similar to AR11268, the mean is more uniform from one region to the next,
 On each plot the yellow dashed line shows the average of the respective value for the non-flaring region over all windows investigated, and the light orange, dark orange and red lines indicate the mean plus one, two and three times the standard deviation over all windows, respectively.\label{fig:Bar-graph-flaring}}
 \end{figure}
 
-
 \section{Discussion}
 
 \subsection{Performance of method}
@@ -378,7 +454,6 @@ The coolest active regions studied may also be be part of the same progression, 
 However, if they are not outliers, the line these points form with the largest flares may describe a maximum peak flux attainable for flares from an active region at a given temperature.
 If such a relation exists it would make an extremely useful part of a flare prediction algorithm, but a much larger sample of flares is needed in order to properly determine whether or not this connection is real.
 
-
 \section{Conclusion} % Merge into section 4?
 
 Although the results of this study are not conclusive, they do suggest a number of promising directions for future research.
@@ -391,7 +466,24 @@ The variability in the mean temperature of the regions studied, while small, is 
 
 This investigation demonstrates that the extremely fast, automated temperature analysis provided by the temperature map method can be a very powerful tool for probing dynamic processes in the corona.
 
-\bibliographystyle{plainnat}
-\bibliography{library}
+%%%% BIBLIOGRAPHY %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     % format of references provided by the journal (.bst)
+\bibliographystyle{spr-mp-sola}
+     % name your Bibtex file containing your references (.bib)
+\bibliography{library}  
+
+     % Checking: look if the file containing the ``\bibitem'' exits
+     %           so check if the .bbl file exist (bibTeX compilation)
+\IfFileExists{\jobname.bbl}{} {\typeout{}
+\typeout{****************************************************}
+\typeout{****************************************************}
+\typeout{** Please run "bibtex \jobname" to obtain} \typeout{**
+the bibliography and then re-run LaTeX} \typeout{** twice to fix
+the references !}
+\typeout{****************************************************}
+\typeout{****************************************************}
+\typeout{}}
+
+\end{article} 
 
 \end{document}
