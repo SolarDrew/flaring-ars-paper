@@ -1,10 +1,18 @@
-\documentclass{article}
-\usepackage[authoryear, round]{natbib}
-\usepackage{longtable}
-\usepackage{amstext}
-\usepackage{amssymb}
-\usepackage{graphicx}
-\usepackage[margin=2cm]{geometry}
+\documentclass[namedreferences]{solarphysics}
+%\usepackage[authoryear, round]{natbib}
+%\usepackage{longtable}
+%\usepackage{amstext}
+%\usepackage{amssymb}
+%\usepackage{graphicx}
+%\usepackage[margin=2cm]{geometry}
+\usepackage[hyperref,optionalrh,showbiblabels]{spr-sola-addons} % For Solar Physics 
+%\usepackage[optionalrh]{spr-sola-addons} % For Solar Physics 
+\usepackage{graphicx}        % For eps figures, newer & more powerfull
+%\usepackage{courier}         % Change the \texttt command to courier style
+%\usepackage{amssymb}        % useful mathematical symbols
+\usepackage{color}           % For color text: \color command
+\usepackage{breakurl}        % For breaking URLs easily trough lines
+\def\UrlFont{\sf}            % define the fonts for the URLs
 
 \title{Case study: flaring active regions}
 \author{Andrew Leonard}
@@ -115,14 +123,8 @@ An example active region temperature map is shown in Fig \ref{fig:ar-demo}.
 The specific flares investigated are listed in Appendix A along with the active region associated with each. % Put the appendix in and cite this properly
 
 \begin{figure}
-\begin{centering}
-\includegraphics[width=0.6\textwidth]{figs/2011-03-09T2240_fulldisk}
-\par\end{centering}
-
-\begin{centering}
-\includegraphics[width=0.6\textwidth]{figs/2011-03-09T2240}
-\par\end{centering}
-
+  \centerline{\includegraphics[width=0.6\textwidth]{figs/2011-03-09T2240_fulldisk}}
+  \centerline{\includegraphics[width=0.6\textwidth]{figs/2011-03-09T2240}}
 \caption{Example of an active region temperature map used for this investigation, and its location on the solar disk.
 Left: full-disk AIA 17.1nm image.
 The blue box indicates the boundaries of the region shown in the temperature map on the right.
