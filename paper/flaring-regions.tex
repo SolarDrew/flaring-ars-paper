@@ -1,5 +1,36 @@
 \documentclass[namedreferences]{solarphysics}
 
+\usepackage{pythontex}
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% PythonTeX Bug Fix % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+% pytexbug fix for context in customcode.
+\makeatletter
+\renewenvironment{pythontexcustomcode}[2][begin]{%
+    \VerbatimEnvironment
+    \Depythontex{env:pythontexcustomcode:om:n}%
+    \ifstrequal{#1}{begin}{}{%
+        \ifstrequal{#1}{end}{}{\PackageError{\pytx@packagename}%
+            {Invalid optional argument for pythontexcustomcode}{}
+        }%
+    }%
+    \xdef\pytx@type{CC:#2:#1}%
+    \edef\pytx@cmd{code}%
+    % PATCH \def\pytx@context{}%
+    \pytx@SetContext
+    % END PATCH
+    \def\pytx@group{none}%
+    \pytx@BeginCodeEnv[none]}%
+{\end{VerbatimOut}%
+\setcounter{FancyVerbLine}{\value{pytx@FancyVerbLineTemp}}%
+\stepcounter{\pytx@counter}%
+}%
+\makeatother
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+\setpythontexcontext{figurewidth=\the\columnwidth, textwidth=\the\textwidth}
+\newcommand{\includepgf}[1]{\IfFileExists{#1}{\input{#1}}{}}
+
 \usepackage[hyperref,optionalrh,showbiblabels]{spr-sola-addons} % For Solar Physics 
 %\usepackage[optionalrh]{spr-sola-addons} % For Solar Physics 
 %\usepackage{epsfig}          % For eps figures, old commands
@@ -470,7 +501,7 @@ This investigation demonstrates that the extremely fast, automated temperature a
      % format of references provided by the journal (.bst)
 \bibliographystyle{spr-mp-sola}
      % name your Bibtex file containing your references (.bib)
-\bibliography{library}  
+\bibliography{library}
 
      % Checking: look if the file containing the ``\bibitem'' exits
      %           so check if the .bbl file exist (bibTeX compilation)
